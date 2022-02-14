@@ -5,7 +5,7 @@ import { Grid, TextField, FormControl, Select, MenuItem, InputLabel, Button } fr
 import { Card } from "../components/Card"
 import { TarjetaArtista } from '../components/tarjetaartista';
 import { TarjetaAlbum } from '../components/TarjetaAlbum';
-
+import { AppNav } from '../components/AppNav';
 
 const cookies = new Cookies();
 
