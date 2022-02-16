@@ -20,7 +20,9 @@ export const getSpotifyToken = async () => {
                 "Content-Type": "application/x-www-form-urlencoded",
             },
         });
+        console.log(response);
         cookie.set("token", response.data.access_token, { path: "/" });
+        
     } catch (err) {
         console.log(err);
     }

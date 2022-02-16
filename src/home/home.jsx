@@ -17,7 +17,9 @@ function Home() {
         query: null
     });
     const TYPES = ["all", "album", "artist", "track"];
-    const token = cookies.get("token");
+   // const token = cookies.get("token");
+    //const [token,setToken]=useState()
+   
 
     const search = async () => {
         const data = await spotifySearch(searchQuery.type, searchQuery.query);
@@ -25,8 +27,8 @@ function Home() {
     }
 
     useEffect(() => {
-        if (token) getSpotifyToken();
-    }, [token]);
+         getSpotifyToken();
+    }, []);
 
 
     return (
