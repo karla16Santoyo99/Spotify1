@@ -1,5 +1,4 @@
 import React, { useEffect, useState } from 'react';
-import Cookies from 'universal-cookie/es6';
 import { getSpotifyToken, spotifySearch } from "../API/api";
 import { Grid, TextField, FormControl, Select, MenuItem, InputLabel, Button } from "@mui/material"
 import { Card } from "../components/Card"
@@ -7,7 +6,7 @@ import { TarjetaArtista } from '../components/tarjetaartista';
 import { TarjetaAlbum } from '../components/TarjetaAlbum';
 
 
-const cookies = new Cookies();
+
 
 function Home() {
 
